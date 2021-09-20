@@ -1,0 +1,262 @@
+/*----------------------------------------------
+    ## Banner Style
+----------------------------------------------*/
+.banner-area-2 {
+	padding: 344px 0 255px;
+	position: relative;
+	z-index: 0;
+	background-size: cover !important;
+	&:after {
+		content:'';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.42);
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+.banner-area-3 {
+	padding: 363px 0 50px;
+	position: relative;
+	z-index: 0;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	&:after {
+		content:'';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.42);
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+.banner-slider {
+	width: 100%;
+	display: flex;
+	position: relative;
+	margin-top: 110px;
+	z-index: 0;
+	.swiper-container {
+		width: 100%;
+	}
+	.swiper-slide {
+		overflow: hidden;
+		.slide-inner {
+			width: 100%;
+			z-index: 1;
+			background-size: cover;
+			background-position: center;
+			.banner-inner {
+				margin-top: 276px;
+				margin-bottom: 260px;
+				h1 {
+					font-weight: 600;
+				}
+			}
+			&:before {
+			    content: "";
+			    position: absolute;
+			    height: 100%;
+			    width: 100%;
+			    background: rgba(0, 0, 0, 0.4);
+			    top: 0;
+			}
+		}
+	}
+	.swiper-button-prev {
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		border-radius: 50%;
+		margin-top: -35px;
+		text-align: center;
+		background: rgba(253, 169, 79, 0.5);
+		left: 50px;
+		transition: $transition;
+		&:before {
+		    font-family: "FontAwesome";
+		    content: "\f104";
+		    font-size: 30px;
+		    margin-left: -5px;
+		    color: $color-white;
+		}
+		&:hover {
+			background: rgb(253, 169, 79,);
+		}
+	}
+	.swiper-button-next {
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		border-radius: 50%;
+		margin-top: -35px;
+		text-align: center;
+		background: rgba(253, 169, 79, 0.5);
+		right: 50px;
+		transition: $transition;
+		&:before {
+		    font-family: "FontAwesome";
+		    content: "\f105";
+		    font-size: 30px;
+		    margin-right: 0px;
+		    color: $color-white;
+		}
+		&:hover {
+			background: rgb(253, 169, 79,);
+		}
+	}
+	.swiper-pagination {
+		display: none;
+	}
+}
+.filter-area {
+	margin-top: 50px;
+    z-index: 9;
+	.nav-pills {
+		border-radius: 6px 6px 0 0;
+		display: inline-flex;
+		background: rgba(235, 238, 243, 0.8);
+		border-bottom: 1px solid rgba(112, 112, 112, 0.4);
+		.nav-item {
+			.nav-link {
+				height: 41px;
+			    line-height: 43px;
+			    padding: 0 20px 0 41px;
+			    border-radius: 0;
+			    background: transparent;
+			    font-size: 16px;
+			    color: #282828;
+			    font-weight: 600;
+			    border-right: 1px solid rgba(112, 112, 112, 0.4);
+			    position: relative;
+			    &.active {
+			    	&:before {
+			    		visibility: visible;
+			    	}
+			    }
+			    &:after {
+			    	content: '';
+			    	position: absolute;
+			    	height: 16px;
+			    	width: 16px;
+			    	border: 2px solid #282828;
+			    	border-radius: 50%;
+			    	background: transparent;
+			    	left: 20px;
+			    	top: 14px;
+			    }
+			    &:before {
+			    	content: '';
+			    	position: absolute;
+			    	height: 6px;
+			    	width: 6px;
+			    	border-radius: 50%;
+			    	background: #282828;
+			    	visibility: hidden;
+			    	left: 25px;
+				    z-index: 9;
+				    top: 19px
+			    }
+			}
+		}
+	}
+	.tab-content {
+		.filter-wrap {
+			height: auto;
+			border-radius: 0 6px 6px 6px;
+			background: rgba(235, 238, 243, 0.8);
+			padding: 20px;
+			.single-input-wrap {
+				height: 100%;
+				display: block;
+				margin-bottom: 0;
+				input {
+					height: 100%;
+					width: 100%;
+					border-radius: 6px;
+					background: #ffffff;
+					border: 0;
+					font-size: 16px;
+					color: rgba(82, 82, 82, 0.8);
+				}
+			}
+			.single-select-wrap {
+				.nice-select {
+					height: 100%;
+					border: 0;
+					line-height: 51px;
+					width: 100%;
+					font-size: 16px;
+					color: rgba(82, 82, 82, 0.8);
+					z-index: auto;
+					&:after {
+						right: 20px;
+						width: 6px;
+						height: 6px;
+						border-bottom: 2px solid rgba(82, 82, 82, 0.8);
+					    border-right: 2px solid rgba(82, 82, 82, 0.8);
+					}
+				}
+			}
+			.btn {
+				width: 100%;
+			    padding: 0;
+			    height: 100%;
+			    line-height: 50px;
+			}
+		}
+	}
+	&.filter-area-2 {
+		margin-top: 0;
+		.nav-pills {
+			width: 100%;
+			.nav-item {
+				width: 50%;
+				.nav-link {
+					padding: 0;
+    				text-align: center;
+    				height: 50px;
+    				line-height: 50px;
+    				&:after {
+    					left: 48px;
+    					top: 17px;
+    				}
+    				&:before {
+    					left: 53px;
+    					top: 22px;
+    				}
+				}
+			}
+		}
+		.tab-content {
+			.filter-wrap {
+				padding: 25px;
+				height: auto;
+				line-height: normal;
+				display: block;
+				.single-select-wrap .nice-select,
+				.single-input-wrap {
+					display: inline-block;
+					height: 50px;
+					margin: 0 0 25px 0;
+					width: 100%;
+					z-index: auto;
+					input {
+						margin: 0;
+						width: 100%;
+					}
+				}
+				.single-select-wrap {
+					margin-right: 0;
+				}
+				.btn {
+					width: 100%;
+				}
+			}
+		}  
+	}
+}

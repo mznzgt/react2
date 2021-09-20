@@ -1,0 +1,159 @@
+/*---------------------------------------------------
+	widget styles
+----------------------------------------------------*/
+.footer-widget {
+	.widget-title {
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 11px;
+	}
+}
+.sidebar-area {
+	.widget {
+		margin-bottom: 30px;
+		background: #F3F3F5;
+		border-radius: 6px;
+		text-align: center;
+		.widget-title {
+			font-family: $font-raleway;
+			font-weight: 600;
+			border-bottom: 1px solid rgba(253, 169, 79, 0.3);
+			padding: 15px 0;
+		}
+		.list {
+			text-align: left;
+			padding: 9px 25px 8px;
+			li {
+				list-style: none;
+				margin-bottom: 9px;
+				&:hover {
+					i {
+						margin-right: 5px;
+					}
+				}
+				i {
+					color: $color-main;
+					transition: $transition;
+				}
+				span {
+					float: right;
+
+				}
+			}
+		}
+	}
+}
+.widget_link {
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			list-style: none;
+			color: #525252;
+			margin-bottom: 2px;
+			a {
+				display: inline-flex;
+			    transition: $transition;
+				&:hover {
+					margin-left: 8px;
+				}
+				i {
+					color: $color-main;
+					line-height: 29px;
+				    margin-right: 6px;
+				}
+			}
+		}
+	}
+}
+.widget_subscribe {
+	.single-input-wrap {
+		position: relative;
+		margin-top: 18px;
+		input {
+			border-radius: 6px;
+			background: #ffffff;
+			border: 0;
+			font-size: 16px;
+			color: rgba(82, 82, 82, 0.8);
+			height: 45px;
+			line-height: 45px;
+			padding: 0 130px 0 20px;
+			margin-bottom: 5px;
+		}
+		.btn {
+			height: 45px;
+			line-height: 45px;
+			border-radius: 0 6px 6px 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 0 18.5px;
+		}
+	}
+	.social-area {
+		.title {
+			font-weight: 600;
+			color: var(--heading-color);
+		}
+		li {
+			a {
+
+			}
+		}
+	}
+}
+.widget-search {
+	position: relative;
+	.single-search-inner {
+		input {
+			width: 100%;
+		    height: 60px;
+		    border-radius: 6px;
+		    background: #F3F3F5;
+		    border: 1px solid #D9D9D9;
+		    padding: 0 50px 0 24px;
+		    font-size: 16px;
+		    color: rgba(82, 82, 82, 0.8);
+		    &::placeholder {
+		    	color: rgba(82, 82, 82, 0.8);
+		    }
+		}
+		button {
+			border: 0 !important;
+		    background: transparent;
+		    color: $color-main;
+		    position: absolute;
+		    right: 24px;
+		    margin-top: -8px;
+		    top: 50%;
+		    display: inline-flex;
+		    font-size: 16px;
+		    padding: 0;
+		    cursor: pointer;
+		}
+	}
+}
+.widget-tags {
+	.tagcloud {
+		text-align: left;
+		padding: 10px 25px 17px;
+		a {
+
+		}
+	}
+}
+
+.widget-contact {
+	.widget-title {
+		margin-bottom: 0;
+		border-bottom: 1px solid rgba(40, 40, 40, 0.3) !important;
+	}
+	form {
+		padding: 25px;
+		.btn {
+			height: 50px;
+			line-height: 50px;
+		}
+	}
+}

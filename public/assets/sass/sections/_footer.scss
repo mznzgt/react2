@@ -1,0 +1,20 @@
+/*--------------------------------------------------
+    ##Footer
+---------------------------------------------------*/
+.footer-area {
+	padding: 84px 0 0px;
+	.widget {
+		margin-bottom: 80px;
+	}
+}
+.footer-bottom {
+	padding: 16.5px 0;
+	p {
+		margin-bottom: 0;
+	}
+	&.bg-black {
+		p {
+			color: #CECECE;
+		}
+	}
+}
